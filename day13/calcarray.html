@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
 <body>
     <script>
         var numbers = [];  //길이가 0인 numbers 배열 선언
-        var sum = 0;  //합계
+        var sum = 0;   //합계
         var avg;
 
         //저장
@@ -34,9 +34,10 @@
             sum += numbers[i];  //sum = sum + numbers[i]
         }
         avg = sum / numbers.length;  //평균 = 합계 / 개수
-        
-        document.write("합계 " + sum + '<br>');
-        document.write("평균 " + avg + '<br>');
+
+        document.write("합계 : " + sum + '<br>');
+        document.write("평균 : " + avg + '<br>');
+
 
     </script>
 </body>

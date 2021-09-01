@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
             border-radius: 50%;
             text-align: center;
             margin: 50px auto;
-            background-color: yellowgreen;
+            background-color: rgb(228, 248, 188);
         }
         h2{padding-top: 50px;}
         p{line-height: 2; font-size: 1.1em;}
@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <div id = "container">
+    <div id="container">
         <h2>지금까지 몇 일?</h2>
         <p>개강 이후 <span id="time" class="access"></span>일 지났습니다.<br>
            수고하셨습니다.
@@ -35,7 +35,9 @@
         var day1 = new Date('2021-8-10');
         var today = new Date();
 
+        //1970. 1.1 자정이후 ~ 지금까지 밀리초(ms-1/1000)로 환산
         var passedTime = today.getTime() - day1.getTime();
+        
         //밀리초를 '일'로 환산
         passedTime = Math.round(passedTime/(24*60*60*1000));
         document.getElementById('time').innerHTML = passedTime;
