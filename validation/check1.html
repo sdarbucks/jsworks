@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/checkmember.js"></script>
 </head>
 <body>
-    <form action="#" method="post" class="regForm">
+    <form action="#" method="post" name="regForm">
         <fieldset>
             <ul>
                 <p>
@@ -18,6 +20,10 @@
                     <input type="password" id="passwd1" name="passwd">
                 </p>
                 <p>
+                    <label for="passwd2">비밀번호 확인</label>
+                    <input type="password" id="passwd2" name="passwd_confirm">
+                </p>
+                <p>
                     <label for="name">이름 </label>
                     <input type="text" id="name" name="name">
                 </p>
@@ -26,7 +32,7 @@
                     <input type="reset" value="취소">
                 </p>
             </ul>
-       </fieldset>
+        </fieldset>
     </form>
 </body>
 </html>
